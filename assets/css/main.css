@@ -4261,19 +4261,6 @@ background-color: #57cc8a;
 width:100%;
 padding:0 !important;
 }
-
-.alt .black > img{
-width:30%;
-}
-.alt .log > img{
-width:18%;
-}
-.reveal.alt .black > img{
-width:30%;
-}
-.reveal.alt .log > img{
-width:18%;
-}
 .thank-logo .black > img{
 width:15%;
 }
@@ -4282,21 +4269,6 @@ width:9%;
 }
 
 @media screen and (min-width:401px) and (max-width: 415px){
-  .reveal.alt .log > img {
-    width: 40% !important;
-  }
-  .reveal.alt .black > img {
-    width: 68% !important;
-  }
-  .reveal.alt .log > img {
-    width: 40% !important;
-  }
-.alt .black > img {
-    width: 68% !important;
-  }
-.alt .log > img {
-    width: 40% !important;
-  }
   .thank-logo .log > img {
     width: 25% !important;
   }
@@ -4316,21 +4288,6 @@ width:9%;
 }
 
 @media screen and (min-width:360px) and (max-width: 374px) {
-  .reveal.alt .log > img {
-    width: 40% !important;
-  }
-  .reveal.alt .black > img {
-    width: 68% !important;
-  }
-  .reveal.alt .log > img {
-    width: 40% !important;
-  }
-.alt .black > img {
-    width: 68% !important;
-  }
-.alt .log > img {
-    width: 40% !important;
-  }
   .thank-logo .log > img {
     width: 26% !important;
   }
@@ -4340,21 +4297,7 @@ width:9%;
 
 }
 @media screen and (min-width:375px) and (max-width: 400px){
-  .reveal.alt .log > img {
-    width: 40% !important;
-  }
-  .reveal.alt .black > img {
-    width: 68% !important;
-  }
-  .reveal.alt .log > img {
-    width: 40% !important;
-  }
-.alt .black > img {
-    width: 68% !important;
-  }
-.alt .log > img {
-    width: 40% !important;
-  }
+  
   .thank-logo .log > img {
     width: 28% !important;
   }
@@ -4364,21 +4307,7 @@ width:9%;
 
 }
 @media screen and (min-width:300px) and (max-width: 359px) {
-  .reveal.alt .log > img {
-    width: 40% !important;
-  }
-  .reveal.alt .black > img {
-    width: 68% !important;
-  }
-  .reveal.alt .log > img {
-    width: 40% !important;
-  }
-.alt .black > img {
-    width: 68% !important;
-  }
-.alt .log > img {
-    width: 40% !important;
-  }
+
   .thank-logo .log > img {
     width: 30% !important;
   }
