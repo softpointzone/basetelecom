@@ -4257,7 +4257,136 @@ background-color: #57cc8a;
 	padding-bottom:150px;
 	background:#434965;
 }
+#header .logo{
+width:100%;
+padding:0 !important;
+}
 
+.alt .black > img{
+width:30%;
+}
+.alt .log > img{
+width:18%;
+}
+.reveal.alt .black > img{
+width:30%;
+}
+.reveal.alt .log > img{
+width:18%;
+}
+.thank-logo .black > img{
+width:15%;
+}
+.thank-logo .log > img{
+width:9%;
+}
+
+@media screen and (min-width:401px) and (max-width: 415px){
+  .reveal.alt .log > img {
+    width: 40% !important;
+  }
+  .reveal.alt .black > img {
+    width: 68% !important;
+  }
+  .reveal.alt .log > img {
+    width: 40% !important;
+  }
+.alt .black > img {
+    width: 68% !important;
+  }
+.alt .log > img {
+    width: 40% !important;
+  }
+  .thank-logo .log > img {
+    width: 25% !important;
+  }
+  .thank-logo .black > img {
+    width: 43% !important;
+  }
+
+}
+@media screen and (min-width:768px) and (max-width: 900px){
+  .thank-logo .log > img {
+    width: 16% !important;
+  }
+  .thank-logo .black > img {
+    width: 26% !important;
+  }
+
+}
+
+@media screen and (min-width:360px) and (max-width: 374px) {
+  .reveal.alt .log > img {
+    width: 40% !important;
+  }
+  .reveal.alt .black > img {
+    width: 68% !important;
+  }
+  .reveal.alt .log > img {
+    width: 40% !important;
+  }
+.alt .black > img {
+    width: 68% !important;
+  }
+.alt .log > img {
+    width: 40% !important;
+  }
+  .thank-logo .log > img {
+    width: 26% !important;
+  }
+  .thank-logo .black > img {
+    width: 45% !important;
+  }
+
+}
+@media screen and (min-width:375px) and (max-width: 400px){
+  .reveal.alt .log > img {
+    width: 40% !important;
+  }
+  .reveal.alt .black > img {
+    width: 68% !important;
+  }
+  .reveal.alt .log > img {
+    width: 40% !important;
+  }
+.alt .black > img {
+    width: 68% !important;
+  }
+.alt .log > img {
+    width: 40% !important;
+  }
+  .thank-logo .log > img {
+    width: 28% !important;
+  }
+  .thank-logo .black > img {
+    width: 47% !important;
+  }
+
+}
+@media screen and (min-width:300px) and (max-width: 359px) {
+  .reveal.alt .log > img {
+    width: 40% !important;
+  }
+  .reveal.alt .black > img {
+    width: 68% !important;
+  }
+  .reveal.alt .log > img {
+    width: 40% !important;
+  }
+.alt .black > img {
+    width: 68% !important;
+  }
+.alt .log > img {
+    width: 40% !important;
+  }
+  .thank-logo .log > img {
+    width: 30% !important;
+  }
+  .thank-logo .black > img {
+    width: 52% !important;
+  }
+
+}
 /* /// THANK U PAGE END /// */
 
 
