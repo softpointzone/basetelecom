@@ -3,7 +3,7 @@ title: Basetelecom
 subtitle: by SOFTPOINTZONE
 email: contato@basetelecom.com.br
 description: Agente autorizado Claro Empresas com foco em identificar as <br /> necessidades do cliente provendo atendimento personalizado no pré e pós-venda.
-baseurl: "/softpointzone" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 author:
 street_address: Avenida Horário Raccanello
