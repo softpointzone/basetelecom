@@ -1,0 +1,201 @@
+<!-- Contact -->
+<section id="contact">
+	<div class="inner">
+		<section>
+			<!--<form id="contact-form" action="https://formspree.io/{{ site.email }}" method="POST">
+			 <form id="formaction" method="POST"> 
+				<div class="field half first">
+					<label for="name">Nome</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field half">
+					<label for="email">E-mail</label>
+					<input type="text" name="_replyto" id="email" />
+				</div>
+				<div class="field">
+					<label for="name">Telefone (opcional)</label>
+					<input type="text" name="tele" id="tele" />
+				</div>
+				<div class="field">
+					<label for="message">Mensagem</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+				<ul class="actions">
+					<input type="hidden" name="_next" value="//softpointzone.github.io/softpointzone/" />
+					<li><input type="submit" value="Enviar" class="special" /></li>
+					<li><input type="reset" value="Limpar" /></li>
+				</ul>
+			</form>-->
+			
+			<form method="POST"
+      			      action="https://www.formingo.co/submit/contato@basetelecom.com.br">
+			      <div class="field half first">
+    			          <label for="full_name">Nome</label>
+    			          <input type="text" name="full_name" id="full_name">
+			      </div>
+			      <div class="field half">
+    			          <label for="__replyto">E-mail</label>
+    			          <input type="email" name="__replyto" id="__replyto">
+			      </div>
+			      <div class="field">
+					<label for="full_name">Telefone (opcional)</label>
+					<input type="text" name="tele" id="tele" />
+			       </div>
+				<div class="field">
+					<label for="message">Mensagem</label>
+					<textarea name="message" id="message" rows="6"></textarea>
+				</div>
+			      <input type="hidden" name="__redirect" value="https://softpointzone.github.io/softpointzone/" />
+    			      <input type="submit" value="Enviar">
+			      <input type="reset" value="Limpar"/>
+			</form>
+		</section>
+		
+		<!--<script>
+    		var contactform =  document.getElementById('formaction');
+    		contactform.setAttribute('action', '//formspree.io/' + 'spzriktick' + '@' + 'gmail' + '.' + 'com');
+		</script>-->
+		
+		
+		<script>
+		$("#contact-form").validate({
+  			submitHandler: function(form) {
+    			$.ajax({
+      			url: "//formspree.io/contato@basetelecom.com.br", 
+      			method: "POST",
+      			data: {
+        		name: $(form).find("input[name='name']").val(),
+        		_replyto: $(form).find("input[name='_replyto']").val(),
+			tele: $(form).find("input[name='tele']").val(),	
+        		message: $(form).find("textarea[name='message']").val()
+      		},
+      		dataType: "json"
+    		});
+  		}
+		});	
+		</script>	
+
+			
+		<!--<form id="contactform" method="POST">
+    		<div class="form-group">
+        	<div class="input-group">
+            	<span class="input-group-addon">Name</span>
+            	<input name="form-name-input" type="text" name="name" class="form-control" required>
+                </div>
+            	<div class="input-group">
+                <span class="input-group-addon">Email</span>
+                <input name="form-email-input" type="email" name="_replyto" class="form-control" required>
+                </div>
+                <div class="input-group">
+                <span class="input-group-addon">Subject</span>
+                <input name="form-subject-input" type="text" name="subject" class="form-control" required>
+                </div>
+                <div class="input-group">
+                <span class="input-group-addon">Description</span>
+                <textarea name="form-description-input" name="description" class="form-control" rows="4" cols="60" required></textarea>
+                </div>
+                <input type="text" name="_gotcha" style="display:none" />
+                <button id="sendMessage">Send</button>
+                </div>-->
+                    
+			
+		
+		<section class="split">
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-envelope"></span>
+					<h3>Email</h3>
+					<!--<a>{{ site.email }}</a>-->
+					<a href="mailto:contato@basetelecom.com.br">contato@basetelecom.com.br</a>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-phone"></span>
+					<h3>Fone</h3>
+					<span><a data-rel="external" href="tel:{{ site.phone }}">{{ site.phone }}</a></span>
+				</div>
+			</section>
+			<section>
+				<div class="contact-method">
+					<span class="icon alt fa-home"></span>
+					<h3>Endereço</h3>
+					<span>{{ site.street_address }}<br />
+					{{ site.city }}, {{ site.state }} {{ site.zip_code }}<br />
+					{{ site.country }}</span>
+				</div>
+			</section>
+		</section>
+	</div>
+</section>
+
+<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<ul class="icons">
+				{% if site.twitter_url %}
+				<li><a href="{{ site.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+				{% endif %}
+				{% if site.googleplus_url %}
+				<li><a href="{{ site.googleplus_url }}" class="icon alt fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
+				{% endif %}
+				{% if site.facebook_url %}
+				<li><a href="{{ site.facebook_url }}" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+				{% endif %}
+				{% if site.instagram_url %}
+				<li><a href="{{ site.instagram_url }}" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+				{% endif %}
+				{% if site.pinterest_url %}
+				<li><a href="{{ site.pinterest_url }}" class="icon alt fa-pinterest" target="_blank"><span class="label">Pinterest</span></a></li>
+				{% endif %}
+				{% if site.500px_url %}
+				<li><a href="{{ site.500px_url }}" class="icon alt fa-500px" target="_blank"><span class="label">500px</span></a></li>
+				{% endif %}
+				{% if site.gitlab_url %}
+				<li><a href="{{ site.gitlab_url }}" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
+				{% endif %}
+				{% if site.github_url %}
+				<li><a href="{{ site.github_url }}" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+				{% endif %}
+				{% if site.slack_url %}
+				<li><a href="{{ site.slack_url }}" class="icon alt fa-slack" target="_blank"><span class="label">Slack</span></a></li>
+				{% endif %}
+				{% if site.linkedin_url %}
+				<li><a href="{{ site.linkedin_url }}" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				{% endif %}
+			</ul>
+			<ul class="copyright">
+				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
+				<li>Design: <a href="http://softpointzone.com" target="_blank">SOFTPOINTZONE</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+
+   <!--	<script>
+		var message = "";
+		$("#sendMessage").on("click", function() {
+    		message = $("#contactform").serialize();
+    		$.ajax({
+        	url: "//formspree.io/spzriktick@gmail.com",
+		method: "POST",
+        	data: {message: message},
+        	dataType: "json"
+    		});
+    		alert('Thanks for the email, we\'ll be in touch promptly.');
+    		return false;
+		});
+	</script>-->
+			
+		
+
+<!-- Scripts -->
+	<script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
+	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
+	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
+	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <!-- Banner -->
+    <section id="banner" class="major">
+        <div class="inner">
+            <header class="major">
+                <h1 class="heading-home">{{ page.landing-title }}</h1>
+            </header>
+            <div class="content">
+                <p style="text-transform: uppercase;">{{ site.description }}</p>
+                <ul class="actions">
+                    <!--<li><a href="#one" class="button next scrolly">Get Started</a></li>-->
+			<li><a href="tel:0800 014 1212" data-rel="external" class="button next scrolly">Ligue agora 0800 014 1212</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+
+        <section id="one" class="tiles">
+        <article>
+                <span class="image">
+                        <img src="assets/images/pic01.jpg" alt="" />
+                </span>
+                <header class="major">
+			<h3>Atendimento</h3>
+                        <p>Consultores especializados em otimizar o uso dos recursos de Telecom em benefícios do negócio do cliente.</p>
+                </header>
+        </article>
+       </section>
+	  
+    </div>
+	
+    <!-- Maintwo -->
+    <div id="maintwo">
+
+        <section id="one" class="tiles">
+        <article>
+                <span class="image">
+                        <img src="assets/images/pic02.jpg" alt="" />
+                </span>
+                <header class="major">
+                        <h3>Redução de Custos</h3>
+                        <p>Utilizamos ferramentas modernas de análise de fatura, evitando gastos desnecessários ao cliente.</p>
+                </header>
+        </article>
+       </section>
+	  
+    </div>
+	
+	<!-- MainThree -->
+    <div id="mainthree">
+
+        <section id="one" class="tiles">
+        <article>
+                <span class="image">
+                        <img src="assets/images/pic03.jpg" alt="" />
+                </span>
+                <header class="major">
+                        <h3>Suporte pós-vendas</h3>
+                        <p>Estaremos disponíveis para tirar suas dúvidas sobre habilitação de linhas, fatura e cobertura.</p>
+                </header>
+        </article>
+       </section>
+	  
+    </div>
+
+    {% include footer.html %}
+	
+</body>
+</html>

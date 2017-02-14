@@ -1,0 +1,44 @@
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
+	<a href="{{ "" | absolute_url }}/" class="logo black"><img src="/softpointzone/assets/base.png"></a>
+	<a href="{{ "" | absolute_url }}/" class="logo log"><img src="/softpointzone/assets/claro.png"></a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+        {% for page in site.pages %}
+		    {% if page.layout == "home" %}
+		        <li><a href="{{ "" | absolute_url }}">{{ page.title }}</a></li>
+	    	{% endif %}
+		{% endfor %}
+		{% for page in site.pages %}
+		    
+		     {% if page.layout == "atendimento" %}
+		        <li><a href="#main" class="scrolly">{{ page.title }}</a></li>
+		    {% endif %}
+		
+		    {% if page.layout == "post" %}
+		        <li><a href="#maintwo" class="scrolly">{{ page.title }}</a></li>
+		    {% endif %}
+		
+		    {% if page.layout == "page" %}
+		        <li><a href="#mainthree" class="scrolly">{{ page.title }}</a></li>
+		    {% endif %}
+		
+		    {% if page.layout == "contato" %}	
+                        <li><a href="#contact" class="scrolly">{{ page.title }}</a></li>
+	            {% endif %}
+		{% endfor %}
+	</ul>
+	
+	<ul class="actions vertical">
+		<li><a href="tel:0800 014 1212" data-rel="external" class="button special fit">Ligue agora 0800 014 1212</a></li>
+	</ul>
+</nav>
