@@ -21,19 +21,19 @@
 		{% for page in site.pages %}
 		    
 		     {% if page.layout == "atendimento" %}
-		        <li><a href="/softpointzone/#main">{{ page.title }}</a></li>
+		        <li><a href="/#main">{{ page.title }}</a></li>
 		    {% endif %}
 		
 		    {% if page.layout == "post" %}
-		        <li><a href="/softpointzone/#maintwo">{{ page.title }}</a></li>
+		        <li><a href="/#maintwo">{{ page.title }}</a></li>
 		    {% endif %}
 		
 		    {% if page.layout == "page" %}
-		        <li><a href="/softpointzone/#mainthree">{{ page.title }}</a></li>
+		        <li><a href="/#mainthree">{{ page.title }}</a></li>
 		    {% endif %}
 		
 		    {% if page.layout == "contato" %}	
-                        <li><a href="#contact" class="scrolly">{{ page.title }}</a></li>
+                        <li><a href="/#contact" class="scrolly">{{ page.title }}</a></li>
 	            {% endif %}
 		{% endfor %}
 	</ul>
